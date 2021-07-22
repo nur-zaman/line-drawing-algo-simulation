@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Line Drawing Algorithm Simulation</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="util.js"></script>
+    <script defer src="canvas.js"></script>
+    <script defer src="algorithms.js"></script>
+</head>
+
+<body>
+
+    <div class="title">
+    <h1>Line Drawing Algorithm</h1>
+</div>
+    <div class="options">
+    <button id="dda">DDA</button>
+    <button id="midpoint">Mid Point</button>
+    <button id="circle">Circle</button>
+</div>
+<div class="input">
+    <div id="dda-input" hidden=true>
+        <input id="dda-x1" placeholder="x1"></input>
+        <input id="dda-y1" placeholder="y1"></input>
+        <input id="dda-x2" placeholder="x2"></input>
+        <input id="dda-y2" placeholder="y2"></input>
+        <button id="dda-run">Run</button>
+    </div>
+
+    <div id="midp-input" hidden=true>
+        <input id="midp-x1" placeholder="x1"></input>
+        <input id="midp-y1" placeholder="y1"></input>
+        <input id="midp-x2" placeholder="x2"></input>
+        <input id="midp-y2" placeholder="y2"></input>
+        <button id="midpoint-run">Run</button>
+
+    </div>
+
+    <div id="circle-input" hidden=true >
+        <input id="circle-x1" placeholder="x1"></input>
+        <input id="circle-y1" placeholder="y1"></input>
+        <input id="circle-r" placeholder="r"></input>
+        <button id="circle-run">Run</button>
+    
+    </div>
+</div>
+    <div class="content">
+        <canvas id="canvas" width="400" height="400" style="border:1px solid" ></canvas>
+       
+    </div>
+<div class="controls">
+        <button id="back"><</button>
+        <button id="foward">></button>
+
+</div>
+<div class='resultsContainer'>
+    <table id="results" style="width:80vw">
+      
+      </table>
+</div>
+</body>
+</html>

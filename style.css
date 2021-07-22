@@ -1,0 +1,43 @@
+html{
+    /* background-color: black; */
+}
+.title{
+    display: flex;
+    justify-content: center;
+    /* color: #fff; */
+}
+h1{
+    text-align: center;
+}
+.options{
+    display: flex;
+    /* justify-content: center; */
+    justify-content: space-evenly;
+    
+}
+.content{
+    display: flex;
+    justify-content: space-evenly;
+    /* background-color: white; */
+    /* height: 70vh; */
+}
+#canvas{
+    /* width:50vw; */
+    
+
+}
+.resultsContainer{
+    display: flex;
+    justify-content: center;
+    /* width: 100vw; */
+
+}
+
+.controls{
+    display: flex;
+    justify-content: center;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
