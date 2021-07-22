@@ -1,43 +1,89 @@
-html{
-    /* background-color: black; */
+html {
+  background-color: #1c1c1c;
+  color: whitesmoke;
 }
-.title{
-    display: flex;
-    justify-content: center;
-    /* color: #fff; */
+.title {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  background-color: #151515;
 }
-h1{
-    text-align: center;
+h1 {
+  text-align: center;
 }
-.options{
-    display: flex;
-    /* justify-content: center; */
-    justify-content: space-evenly;
-    
+.options {
+  display: flex;
+  /* justify-content: center; */
+  justify-content: space-evenly;
+  background-color: black;
 }
-.content{
-    display: flex;
-    justify-content: space-evenly;
-    /* background-color: white; */
-    /* height: 70vh; */
+.input {
+  display: flex;
+  justify-content: center;
 }
-#canvas{
+.dda-input .midp-input .circle-input {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.content {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #151515;
+  /* height: 70vh; */
+}
+/* #canvas{
     /* width:50vw; */
-    
 
+/* border:1px solid #fff */
+/* } */
+.controls {
+  display: flex;
+  justify-content: center;
+  background-color: black;
 }
-.resultsContainer{
-    display: flex;
-    justify-content: center;
-    /* width: 100vw; */
+.resultsContainer {
+  display: flex;
+  justify-content: center;
+  /* width: 100vw; */
+  background-color: #151515;
+}
 
+table,
+th,
+td {
+  border: 1px solid whitesmoke;
+  border-collapse: collapse;
 }
 
-.controls{
-    display: flex;
-    justify-content: center;
+th {
+  background-color: rgba(4, 129, 79, 0.5);
 }
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-  }
+
+.options > button {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 8px 32px;
+  margin: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: darkslategrey; /* Green */
+  color: white;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.footer > a {
+  color: white;
+}

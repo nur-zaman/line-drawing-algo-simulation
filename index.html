@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Line Drawing Algorithm Simulation</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.plot.ly/plotly-2.2.1.min.js"></script>
     <script defer src="util.js"></script>
-    <script defer src="canvas.js"></script>
     <script defer src="algorithms.js"></script>
 </head>
 
@@ -22,7 +22,8 @@
     <button id="circle">Circle</button>
 </div>
 <div class="input">
-    <div id="dda-input" hidden=true>
+    <div id="dda-input" >
+        <span >DDA:</span>
         <input id="dda-x1" placeholder="x1"></input>
         <input id="dda-y1" placeholder="y1"></input>
         <input id="dda-x2" placeholder="x2"></input>
@@ -31,6 +32,7 @@
     </div>
 
     <div id="midp-input" hidden=true>
+        <span >Midpoint:</span>
         <input id="midp-x1" placeholder="x1"></input>
         <input id="midp-y1" placeholder="y1"></input>
         <input id="midp-x2" placeholder="x2"></input>
@@ -40,6 +42,7 @@
     </div>
 
     <div id="circle-input" hidden=true >
+        <span >Circle:</span>
         <input id="circle-x1" placeholder="x1"></input>
         <input id="circle-y1" placeholder="y1"></input>
         <input id="circle-r" placeholder="r"></input>
@@ -48,18 +51,21 @@
     </div>
 </div>
     <div class="content">
-        <canvas id="canvas" width="400" height="400" style="border:1px solid" ></canvas>
-       
+        <!-- <canvas id="canvas" width="600" height="600" ></canvas> -->
+        <div id="plot"></div>
     </div>
-<div class="controls">
+<!-- <div class="controls" hidden=true>
         <button id="back"><</button>
         <button id="foward">></button>
 
-</div>
+</div> -->
 <div class='resultsContainer'>
     <table id="results" style="width:80vw">
       
       </table>
 </div>
+<div class="footer" ><a href="https://github.com/nur-zaman/line-drawing-algo-simulation" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+  </svg></a></div>
 </body>
 </html>
